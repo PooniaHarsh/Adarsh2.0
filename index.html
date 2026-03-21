@@ -74,12 +74,16 @@
         <div class="marquee-title">
             <i class='bx bx-bell bx-tada'></i> Latest Updates
         </div>
-        <div class="marquee-content">
-            <marquee behavior="scroll" direction="left" scrollamount="8" onmouseover="this.stop();" onmouseout="this.start();">
+        <div class="marquee-content" id="marquee-content">
+            <div class="marquee-scroll">
                 <span class="marquee-item"><span class="badge">NEW</span> Admissions open for Session 2026-27! Register today.</span>
                 <span class="marquee-item"><span class="badge">PROUD</span> Congratulations to our 10th Board toppers! Check the Academics section for details.</span>
                 <span class="marquee-item"><span class="badge">EVENT</span> Upcoming Annual Sports Meet scheduled for next month.</span>
-            </marquee>
+                <!-- Duplicate for seamless loop -->
+                <span class="marquee-item"><span class="badge">NEW</span> Admissions open for Session 2026-27! Register today.</span>
+                <span class="marquee-item"><span class="badge">PROUD</span> Congratulations to our 10th Board toppers! Check the Academics section for details.</span>
+                <span class="marquee-item"><span class="badge">EVENT</span> Upcoming Annual Sports Meet scheduled for next month.</span>
+            </div>
         </div>
     </div>
 
@@ -101,7 +105,7 @@
                     </div>
                     <div class="about-image-wrapper">
                         <!-- Using sir1.jpg as the principal/director image -->
-                        <img src="images/sir1.jpg" alt="Director's Message" class="about-img" onerror="this.src='https://via.placeholder.com/400';">
+                        <img src="images/sir1.png" alt="Director's Message" class="about-img" onerror="this.src='https://via.placeholder.com/400';">
                         <div class="about-badge">
                             <h4>Director's Message</h4>
                             <p>"Education is the most powerful weapon."</p>
@@ -156,7 +160,7 @@
                         <div class="gallery-overlay"><span>Activities</span></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/sir2.jpg" alt="Events" onerror="this.src='https://via.placeholder.com/400x300';">
+                        <img src="images/event.JPG" alt="Events" onerror="this.src='https://via.placeholder.com/400x300';">
                         <div class="gallery-overlay"><span>Events</span></div>
                     </div>
                 </div>
@@ -231,10 +235,10 @@
                     </a>
                     <p class="footer-desc">Empowering the leaders of tomorrow through holistic education and academic excellence. Join us in our journey of discovery and growth.</p>
                     <div class="footer-socials">
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.facebook.com/AdarshShikshanSamuhPilani" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/AdarshSchoolPilani" target="_blank"><i class='bx bxl-twitter'></i></a>
                         <a href="https://www.instagram.com/adarsh_eduhub/" target="_blank"><i class='bx bxl-instagram'></i></a>
-                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                        <a href="https://www.youtube.com/@AdarshSchoolPilani" target="_blank"><i class='bx bxl-youtube'></i></a>
                     </div>
                 </div>
                 

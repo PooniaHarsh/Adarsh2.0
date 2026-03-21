@@ -394,15 +394,27 @@ img {
 .marquee-content {
     flex-grow: 1;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.marquee-content marquee {
-    padding-top: 5px; /* Alignment fix */
+.marquee-content:hover .marquee-scroll {
+    animation-play-state: paused;
+}
+
+.marquee-scroll {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee-scroll 40s linear infinite;
+    padding-right: 2rem;
 }
 
 .marquee-item {
-    margin-right: 3rem;
+    display: inline-block;
+    padding: 0 2rem;
     font-weight: 500;
+    flex-shrink: 0;
 }
 
 .badge {
@@ -428,6 +440,15 @@ img {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* ==========================================================================
