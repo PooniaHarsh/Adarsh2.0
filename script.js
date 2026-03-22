@@ -79,3 +79,15 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive);
+
+// Hero Slider
+const heroImages = document.querySelectorAll('.hero-img');
+let currentImageIndex = 0;
+
+if (heroImages.length > 1) {
+    setInterval(() => {
+        heroImages[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+        heroImages[currentImageIndex].classList.add('active');
+    }, 5000); // Change image every 5 seconds
+}
