@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Opportunities | ADARSH VIDYA NIKETAN</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/Newlogo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: linear-gradient(to right, rgba(13, 40, 71, 0.9), rgba(13, 40, 71, 0.8)), url('images/schoolbg.jpg') center/cover;
+            padding: 12rem 0 6rem;
+            text-align: center;
+            color: white;
+        }
+        .page-title {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        .page-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .career-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .job-card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition-fast);
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent-color);
+        }
+        .job-info h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .job-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        @media screen and (max-width: 768px) {
+            .job-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="index.html" class="brand">
+                <img src="images/Newlogo.png" alt="School Logo" class="brand-logo" onerror="this.src='https://via.placeholder.com/50';">
+                <div class="brand-text">
+                    <span class="brand-title">ADARSH</span>
+                    <span class="brand-subtitle">VIDYA NIKETAN SR.SEC. SCHOOL, PILANI</span>
+                </div>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="index.html#academics" class="nav-link">Academics</a></li>
+                    <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="index.html#faculty" class="nav-link">Faculty</a></li>
+                    <li class="nav-item"><a href="career.html" class="nav-link active">Career</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+            
+            <!-- Quick Action -->
+            <div class="nav-actions">
+                <a href="apply.html" class="btn btn-primary nav-btn">Apply Now</a>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container reveal">
+            <h1 class="page-title">Join Our <span class="text-accent">Team</span></h1>
+            <p class="page-subtitle">We are always looking for passionate educators and dedicated staff to help shape the future of our students.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="section section-bg">
+        <div class="container reveal">
+            
+            <h2 class="section-title">Open Positions</h2>
+            
+            <div class="career-grid">
+                <!-- Job 1 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>PGT Mathematics</h3>
+                        <div class="job-meta">
+                            <span><i class='bx bx-briefcase'></i> Full Time</span>
+                            <span><i class='bx bx-map'></i> Pilani Campus</span>
+                            <span><i class='bx bx-time'></i> Posted 2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="job-action">
+                        <a href="#apply-form-section" class="btn btn-outline" style="color:var(--primary-color); border-color:var(--primary-color);">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>Primary School Teacher (English)</h3>
+                        <div class="job-meta">
+                            <span><i class='bx bx-briefcase'></i> Full Time</span>
+                            <span><i class='bx bx-map'></i> Pilani Campus</span>
+                            <span><i class='bx bx-time'></i> Posted 1 week ago</span>
+                        </div>
+                    </div>
+                    <div class="job-action">
+                        <a href="#apply-form-section" class="btn btn-outline" style="color:var(--primary-color); border-color:var(--primary-color);">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>Administrative Assistant</h3>
+                        <div class="job-meta">
+                            <span><i class='bx bx-briefcase'></i> Full Time</span>
+                            <span><i class='bx bx-map'></i> Pilani Campus</span>
+                            <span><i class='bx bx-time'></i> Posted 2 weeks ago</span>
+                        </div>
+                    </div>
+                    <div class="job-action">
+                        <a href="#apply-form-section" class="btn btn-outline" style="color:var(--primary-color); border-color:var(--primary-color);">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application Form -->
+            <div class="form-container" id="apply-form-section">
+                <div class="form-header">
+                    <h2>Submit Your Application</h2>
+                    <p>Don't see a position that matches your skills? Submit your general application here.</p>
+                </div>
+                
+                <form action="#" method="POST" id="career-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantName">Full Name *</label>
+                            <input type="text" id="applicantName" name="applicantName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+91 XXXXXXXXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Position Applied For *</label>
+                            <select id="position" name="position" class="form-control" required>
+                                <option value="" disabled selected>Select Position</option>
+                                <option value="PGT Mathematics">PGT Mathematics</option>
+                                <option value="Primary School Teacher">Primary School Teacher (English)</option>
+                                <option value="Administrative Assistant">Administrative Assistant</option>
+                                <option value="General">General Application</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Total Years of Experience *</label>
+                        <select id="experience" name="experience" class="form-control" required>
+                            <option value="fresher">Fresher</option>
+                            <option value="1-3">1 - 3 Years</option>
+                            <option value="3-5">3 - 5 Years</option>
+                            <option value="5-10">5 - 10 Years</option>
+                            <option value="10+">10+ Years</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="coverLetter">Cover Letter / Message</label>
+                        <textarea id="coverLetter" name="coverLetter" class="form-control" placeholder="Tell us why you'd be a great fit for our school..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resume">Upload Resume (PDF/DOCX) *</label>
+                        <input type="file" id="resume" name="resume" class="form-control" accept=".pdf,.doc,.docx" required style="padding: 0.7rem;">
+                    </div>
+
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <button type="submit" class="btn btn-primary btn-submit" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="https://www.instagram.com/adarsh_eduhub/" target="_blank" class="footer-brand">
+                        <img src="images/Newlogo.png" alt="School Logo" class="footer-logo" onerror="this.src='https://via.placeholder.com/50';">
+                        <div class="footer-brand-text">
+                            <span class="brand-title">ADARSH</span>
+                            <span class="brand-subtitle">VIDYA NIKETAN SR.SEC. SCHOOL, PILANI</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">Empowering the leaders of tomorrow through holistic education and academic excellence. Join us in our journey of discovery and growth.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/AdarshShikshanSamuhPilani" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://twitter.com/AdarshSchoolPilani" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/adarsh_eduhub/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/@AdarshSchoolPilani" target="_blank"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#academics">Academics</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#faculty">Faculty</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Admissions</h3>
+                    <ul class="footer-links">
+                        <li><a href="apply.html">Admission Process</a></li>
+                        <li><a href="#">Fee Structure</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class='bx bx-map'></i>Industrial area, Pilani, Rajasthan 333031</li>
+                        <li><i class='bx bx-phone'></i>+91 9549339991</li>
+                        <li><i class='bx bx-envelope'></i>adarshschoolpilani07@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ADARSH VIDYA NIKETAN SR.SEC. SCHOOL, PILANI. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Form submission handling for demo purposes
+        document.getElementById('career-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('.btn-submit');
+            const originalText = btn.innerText;
+            
+            btn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Submitting...';
+            btn.style.opacity = '0.8';
+            btn.style.pointerEvents = 'none';
+            
+            setTimeout(() => {
+                btn.innerHTML = '<i class="bx bx-check-circle"></i> Application Submitted!';
+                btn.style.backgroundColor = '#28a745';
+                btn.style.color = '#fff';
+                
+                setTimeout(() => {
+                    this.reset();
+                    btn.innerHTML = originalText;
+                    btn.style.backgroundColor = '';
+                    btn.style.color = '';
+                    btn.style.opacity = '1';
+                    btn.style.pointerEvents = 'all';
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

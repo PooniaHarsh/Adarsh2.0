@@ -3,16 +3,18 @@
    ========================================================================== */
 :root {
     /* Color Palette */
-    --primary-color: #0d2847; /* Deep Blue, represents trust and education */
+    --primary-color: #0d2847;
+    /* Deep Blue, represents trust and education */
     --primary-light: #1f4a7c;
-    --accent-color: #ffaa00; /* Rich gold/orange for important highlights */
+    --accent-color: #ffaa00;
+    /* Rich gold/orange for important highlights */
     --accent-hover: #e69900;
-    
+
     /* Text Colors */
     --text-dark: #1a1a1a;
     --text-muted: #555555;
     --text-light: #ffffff;
-    
+
     /* Backgrounds */
     --bg-main: #f8f9fa;
     --bg-section: #ffffff;
@@ -22,11 +24,11 @@
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
-    
+
     /* Shadows & Transitions */
-    --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
-    --shadow-md: 0 10px 20px rgba(0,0,0,0.1);
-    --shadow-lg: 0 20px 40px rgba(0,0,0,0.15);
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
     --transition-fast: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     --transition-slow: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -34,7 +36,9 @@
 /* ==========================================================================
    Reset & Base Styles
    ========================================================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,7 +57,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
@@ -184,6 +193,11 @@ img {
     transition: height var(--transition-fast);
 }
 
+.navbar.container {
+    width: 90%;
+    max-width: 1400px;
+}
+
 .header.scrolled .navbar {
     height: 90px;
 }
@@ -199,7 +213,8 @@ img {
     width: auto;
 }
 
-.brand-text, .footer-brand-text {
+.brand-text,
+.footer-brand-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,7 +284,8 @@ img {
     gap: 1.5rem;
 }
 
-.nav-close, .nav-toggle {
+.nav-close,
+.nav-toggle {
     display: none;
     font-size: 2rem;
     color: var(--primary-color);
@@ -303,13 +319,19 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transform: scale(1.05); /* Slight scale for potential parallax/animation */
+    transform: scale(1.05);
+    /* Slight scale for potential parallax/animation */
     animation: zoomInOut 20s infinite alternate linear;
 }
 
 @keyframes zoomInOut {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .hero-overlay {
@@ -327,7 +349,8 @@ img {
     max-width: 800px;
     color: var(--text-light);
     z-index: 10;
-    margin-top: 110px; /* offset navbar */
+    margin-top: 110px;
+    /* offset navbar */
 }
 
 .hero-title {
@@ -336,7 +359,7 @@ img {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     color: var(--text-light);
-    text-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
@@ -345,7 +368,7 @@ img {
     margin-bottom: 2.5rem;
     max-width: 600px;
     opacity: 0.9;
-    text-shadow: 1px 2px 5px rgba(0,0,0,0.3);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero-buttons {
@@ -446,6 +469,7 @@ img {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -513,7 +537,7 @@ img {
     border-radius: 12px;
     box-shadow: var(--shadow-md);
     max-width: 250px;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .about-badge h4 {
@@ -647,7 +671,7 @@ img {
     text-align: center;
     box-shadow: var(--shadow-sm);
     transition: var(--transition-fast);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .faculty-card:hover {
@@ -826,12 +850,12 @@ img {
     .hero-title {
         font-size: 3.5rem;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .about-badge {
         right: 0;
         bottom: 0;
@@ -841,7 +865,7 @@ img {
     .gallery-item.large {
         grid-column: span 1;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -856,7 +880,7 @@ img {
         max-width: 300px;
         height: 100vh;
         background-color: var(--bg-section);
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         padding: 6rem 2rem;
         flex-direction: column;
         transition: right var(--transition-fast);
@@ -890,11 +914,11 @@ img {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         gap: 1rem;
@@ -903,13 +927,107 @@ img {
     .marquee-title {
         padding: 0 1rem;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* ==========================================================================
+   Forms & Inputs (Apply & Career)
+   ========================================================================== */
+.form-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.form-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.form-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: var(--text-dark);
+    transition: var(--transition-fast);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(255, 170, 0, 0.1);
+}
+
+.form-control::placeholder {
+    color: #a0a0a0;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%230d2847%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem top 50%;
+    background-size: 0.65em auto;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-container {
+        padding: 2rem 1.5rem;
+        margin: 2rem auto;
     }
 }
